@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoped Variables</title>
+</head>
+<body>
+    <h1>Scope Lab for Var, Let and Const</h1>
+    </h1>
+    <script src="./scope_lab.js"></script>
+</body>
+</html>
+//Block Scope
+console.log(blockVar);
+console.log(blockLet);
+function show(){
+var functionVar = "我是一个块级作用域的变量";
+let functionLet = "我是一个块级作用域的 let";
+const functionConst = "我是一个块级作用域的 const";
+}
+show();
+
+// console.log(functionVar); // 抛出 ReferenceError
+// console.log(functionLet); // 抛出 ReferenceError
+// console.log(functionConst); // 抛出 ReferenceError
